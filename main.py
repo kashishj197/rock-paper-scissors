@@ -27,7 +27,7 @@ scissors = '''
 import random
 
 choices = [rock, paper, scissors]
-player = input("What do you choose? Type 0 for rock 1 for paper and 2 for scissors: ")
+player = int(input("What do you choose? Type 0 for rock 1 for paper and 2 for scissors: "))
 computer = random.randint(0, 2)
 print(f"You chose\n{choices[player]}")
 print(f"Computer chose\n{choices[computer]}")
