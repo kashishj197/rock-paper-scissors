@@ -32,10 +32,16 @@ computer = random.randint(0, 2)
 print(f"You chose\n{choices[player]}")
 print(f"Computer chose\n{choices[computer]}")
 
-if player == 0 and computer == 2:
+if player > 2 or player < 0:
+  print("You typed an invalid number!")
+elif player == 0 and computer == 2:
+  print("You win!")
+elif computer == 0 and player == 1:
   print("You win!")
 elif computer > player:
   print("You lose!")
+elif player > computer:
+  print("You win!")
 else:
   print("It's a draw!")
 
