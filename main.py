@@ -36,7 +36,7 @@ if player == 0 and computer == 2:
   print("You win!")
 elif computer > player:
   print("You lose!")
-else
+else:
   print("It's a draw!")
 
 
